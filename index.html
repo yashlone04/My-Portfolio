@@ -1,0 +1,930 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yash Lone | Full Stack Developer & AI/ML Engineer Portfolio</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Professional portfolio of Yash Lone, a B.Tech Computer Science graduate specializing in Full Stack Development, AI/ML, and Software Engineering. View projects, experience, certifications, and GitHub statistics.">
+    <meta name="keywords" content="Yash Lone, Full Stack Developer, Software Engineer, Java Developer, Spring Boot, React, AI, Machine Learning, Python, Web Developer Portfolio">
+    <meta name="author" content="Yash Lone">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Yash Lone | Full Stack Developer & AI/ML Engineer">
+    <meta property="og:description" content="Explore the portfolio of Yash Lone: Full Stack Development (Java, Spring Boot, React) and AI/ML projects.">
+    <meta property="og:image" content="https://avatars.githubusercontent.com/u/10493385">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:title" content="Yash Lone | Full Stack Developer & AI/ML Engineer">
+    <meta property="twitter:description" content="Explore the portfolio of Yash Lone: Full Stack Development and AI/ML projects.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="dark-theme">
+    <!-- Particle Background -->
+    <canvas id="particle-canvas"></canvas>
+    <!-- Header & Navigation -->
+    <header class="header">
+        <div class="nav-container container">
+            <a href="#home" class="logo">
+                <span class="logo-code">&lt;</span>Yash<span class="logo-accent">Lone</span><span class="logo-code"> /&gt;</span>
+            </a>
+            
+            <nav class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li><a href="#home" class="nav-link active-link">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#experience" class="nav-link">Experience</a></li>
+                    <li><a href="#education" class="nav-link">Education</a></li>
+                    <li><a href="#certifications" class="nav-link">Certificates</a></li>
+                    <li><a href="#github" class="nav-link">GitHub</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+                <div class="nav-close" id="nav-close">
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
+            </nav>
+            <div class="nav-actions">
+                <!-- Theme Toggle Button -->
+                <button class="theme-toggle-btn" id="theme-toggle" aria-label="Toggle Theme">
+                    <i class="fa-solid fa-sun icon-sun"></i>
+                    <i class="fa-solid fa-moon icon-moon"></i>
+                </button>
+                
+                <!-- Menu Toggle (Mobile) -->
+                <div class="nav-toggle" id="nav-toggle">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="main-content">
+        <!-- Hero Section -->
+        <section class="hero section" id="home">
+            <div class="hero-container container grid">
+                <div class="hero-data">
+                    <span class="hero-greeting">Hi there, I am</span>
+                    <h1 class="hero-name">Yash Lone</h1>
+                    <h2 class="hero-title">Full Stack Developer <span class="divider">|</span> AI & ML Enthusiast <span class="divider">|</span> Software Engineer</h2>
+                    <p class="hero-description">
+                        Passionate Computer Science graduate skilled in Full Stack Development, AI, Machine Learning, Java, Python, React, Spring Boot, and Cloud Technologies. Focused on building scalable applications and solving real-world problems through technology.
+                    </p>
+                    <div class="hero-ctas">
+                        <a href="#projects" class="btn btn-primary">View Projects <i class="fa-solid fa-arrow-right"></i></a>
+                        <a href="#contact" class="btn btn-secondary">Contact Me <i class="fa-solid fa-envelope"></i></a>
+                        <a href="javascript:void(0)" class="btn btn-outline" id="download-resume-btn">
+                            Download Resume <i class="fa-solid fa-download"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-img-container">
+                    <div class="hero-blob">
+                        <div class="hero-blob-border"></div>
+                        <div class="hero-blob-bg"></div>
+                        <!-- Sleek avatar mockup -->
+                        <div class="hero-avatar">
+                            <i class="fa-solid fa-code avatar-icon"></i>
+                            <div class="avatar-lines">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Stats Badges -->
+                    <div class="hero-badge badge-1">
+                        <i class="fa-brands fa-java badge-icon java-color"></i>
+                        <div>
+                            <h4>Java Full Stack</h4>
+                            <p>Spring Boot & React</p>
+                        </div>
+                    </div>
+                    <div class="hero-badge badge-2">
+                        <i class="fa-solid fa-brain badge-icon ai-color"></i>
+                        <div>
+                            <h4>AI / ML</h4>
+                            <p>Deep Learning & GenAI</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="scroll-down">
+                <a href="#about" class="scroll-down-btn">
+                    <span class="scroll-mouse"><span class="scroll-wheel"></span></span>
+                    <span class="scroll-text">Scroll Down</span>
+                    <i class="fa-solid fa-chevron-down scroll-arrow"></i>
+                </a>
+            </div>
+        </section>
+        <!-- About Me Section -->
+        <section class="about section" id="about">
+            <h2 class="section-title">About Me</h2>
+            <span class="section-subtitle">My Introduction</span>
+            
+            <div class="about-container container grid">
+                <div class="about-info">
+                    <p class="about-description">
+                        I am a highly motivated B.Tech Computer Science and Engineering graduate (2026) with a passion for software development and artificial intelligence. My technical core lies in Java Full Stack development, where I design and implement end-to-end features—from relational database schemas to responsive frontend user interfaces. 
+                    </p>
+                    <p class="about-description">
+                        Beyond core software engineering, I explore machine learning, deep learning, and generative AI systems to build intelligent automated workflows. I thrive in collaborative team settings, applying agile methodologies and robust version control to deliver clean, scalable, and highly functional code.
+                    </p>
+                    
+                    <div class="about-objective">
+                        <h4><i class="fa-solid fa-bullseye"></i> Career Objective</h4>
+                        <p>
+                            Seeking an entry-level Software Engineer, Full Stack Developer, or AI/ML Engineer role in a progressive organization. Ready to leverage solid hands-on experience in Java, Spring Boot, React, and Python to contribute to product delivery while rapidly mastering new enterprise-grade technologies.
+                        </p>
+                    </div>
+                    <!-- Highlights Cards -->
+                    <div class="about-highlights grid">
+                        <div class="highlight-card">
+                            <i class="fa-solid fa-cubes-stacked highlight-icon"></i>
+                            <h3>Full Stack</h3>
+                            <p>Java, Spring Boot, React, Node.js, SQL & NoSQL Databases</p>
+                        </div>
+                        <div class="highlight-card">
+                            <i class="fa-solid fa-microchip highlight-icon"></i>
+                            <h3>AI & ML</h3>
+                            <p>Python, TensorFlow, Scikit-learn, GenAI APIs, Data Analysis</p>
+                        </div>
+                        <div class="highlight-card">
+                            <i class="fa-solid fa-laptop-code highlight-icon"></i>
+                            <h3>Engineering</h3>
+                            <p>OOPs, Data Structures, MVC, Compiler Design, RESTful Architecture</p>
+                        </div>
+                        <div class="highlight-card">
+                            <i class="fa-solid fa-users highlight-icon"></i>
+                            <h3>Soft Skills</h3>
+                            <p>Active problem solver, agile team collaborator, quick learner</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Skills Section -->
+        <section class="skills section" id="skills">
+            <h2 class="section-title">Technical Skills</h2>
+            <span class="section-subtitle">My Technical Arsenal</span>
+            <div class="skills-container container grid">
+                <!-- Group 1: Programming Languages -->
+                <div class="skills-content">
+                    <h3 class="skills-header">
+                        <i class="fa-solid fa-terminal skills-icon"></i>
+                        <span>Programming Languages</span>
+                    </h3>
+                    <div class="skills-list grid">
+                        <div class="skills-data">
+                            <div class="skills-titles">
+                                <h4 class="skills-name"><i class="fa-brands fa-java skill-mini-icon"></i> Java (Core & Advanced)</h4>
+                                <span class="skills-number">90%</span>
+                            </div>
+                            <div class="skills-bar">
+                                <span class="skills-percentage" style="width: 90%"></span>
+                            </div>
+                        </div>
+                        <div class="skills-data">
+                            <div class="skills-titles">
+                                <h4 class="skills-name"><i class="fa-brands fa-python skill-mini-icon"></i> Python</h4>
+                                <span class="skills-number">85%</span>
+                            </div>
+                            <div class="skills-bar">
+                                <span class="skills-percentage" style="width: 85%"></span>
+                            </div>
+                        </div>
+                        <div class="skills-data">
+                            <div class="skills-titles">
+                                <h4 class="skills-name"><i class="fa-brands fa-js skill-mini-icon"></i> JavaScript</h4>
+                                <span class="skills-number">80%</span>
+                            </div>
+                            <div class="skills-bar">
+                                <span class="skills-percentage" style="width: 80%"></span>
+                            </div>
+                        </div>
+                        <div class="skills-data">
+                            <div class="skills-titles">
+                                <h4 class="skills-name"><i class="fa-solid fa-database skill-mini-icon"></i> SQL</h4>
+                                <span class="skills-number">85%</span>
+                            </div>
+                            <div class="skills-bar">
+                                <span class="skills-percentage" style="width: 85%"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Group 2: Backend Development -->
+                <div class="skills-content">
+                    <h3 class="skills-header">
+                        <i class="fa-solid fa-gears skills-icon"></i>
+                        <span>Backend Technologies</span>
+                    </h3>
+                    <div class="skills-list grid">
+                        <div class="skills-data">
+                            <div class="skills-titles">
+                                <h4 class="skills-name"><i class="fa-solid fa-leaf skill-mini-icon"></i> Spring Boot & Hibernate/JPA</h4>
+                                <span class="skills-number">88%</span>
+                            </div>
+                            <div class="skills-bar">
+                                <span class="skills-percentage" style="width: 88%"></span>
+                            </div>
+                        </div>
+                        <div class="skills-data">
+                            <div class="skills-titles">
+                                <h4 class="skills-name"><i class="fa-brands fa-node-js skill-mini-icon"></i> Node.js & Express</h4>
+                                <span class="skills-number">75%</span>
+                            </div>
+                            <div class="skills-bar">
+                                <span class="skills-percentage" style="width: 75%"></span>
+                            </div>
+                        </div>
+                        <div class="skills-data">
+                            <div class="skills-titles">
+                                <h4 class="skills-name"><i class="fa-solid fa-network-wired skill-mini-icon"></i> REST APIs & MVC Design</h4>
+                                <span class="skills-number">85%</span>
+                            </div>
+                            <div class="skills-bar">
+                                <span class="skills-percentage" style="width: 85%"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Group 3: Frontend Development -->
+                <div class="skills-content">
+                    <h3 class="skills-header">
+                        <i class="fa-solid fa-window-restore skills-icon"></i>
+                        <span>Frontend Technologies</span>
+                    </h3>
+                    <div class="skills-list grid">
+                        <div class="skills-data">
+                            <div class="skills-titles">
+                                <h4 class="skills-name"><i class="fa-brands fa-react skill-mini-icon"></i> React.js</h4>
+                                <span class="skills-number">85%</span>
+                            </div>
+                            <div class="skills-bar">
+                                <span class="skills-percentage" style="width: 85%"></span>
+                            </div>
+                        </div>
+                        <div class="skills-data">
+                            <div class="skills-titles">
+                                <h4 class="skills-name"><i class="fa-brands fa-html5 skill-mini-icon"></i> HTML5 & CSS3</h4>
+                                <span class="skills-number">90%</span>
+                            </div>
+                            <div class="skills-bar">
+                                <span class="skills-percentage" style="width: 90%"></span>
+                            </div>
+                        </div>
+                        <div class="skills-data">
+                            <div class="skills-titles">
+                                <h4 class="skills-name"><i class="fa-brands fa-bootstrap skill-mini-icon"></i> Bootstrap & Tailwind CSS</h4>
+                                <span class="skills-number">80%</span>
+                            </div>
+                            <div class="skills-bar">
+                                <span class="skills-percentage" style="width: 80%"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Group 4: AI & Machine Learning -->
+                <div class="skills-content">
+                    <h3 class="skills-header">
+                        <i class="fa-solid fa-brain skills-icon"></i>
+                        <span>AI & Machine Learning</span>
+                    </h3>
+                    <div class="skills-list grid">
+                        <div class="skills-data">
+                            <div class="skills-titles">
+                                <h4 class="skills-name"><i class="fa-solid fa-diagram-project skill-mini-icon"></i> Machine Learning (Scikit)</h4>
+                                <span class="skills-number">80%</span>
+                            </div>
+                            <div class="skills-bar">
+                                <span class="skills-percentage" style="width: 80%"></span>
+                            </div>
+                        </div>
+                        <div class="skills-data">
+                            <div class="skills-titles">
+                                <h4 class="skills-name"><i class="fa-solid fa-network-wired skill-mini-icon"></i> Deep Learning & Neural Nets</h4>
+                                <span class="skills-number">70%</span>
+                            </div>
+                            <div class="skills-bar">
+                                <span class="skills-percentage" style="width: 70%"></span>
+                            </div>
+                        </div>
+                        <div class="skills-data">
+                            <div class="skills-titles">
+                                <h4 class="skills-name"><i class="fa-solid fa-robot skill-mini-icon"></i> Generative AI & LLM APIs</h4>
+                                <span class="skills-number">75%</span>
+                            </div>
+                            <div class="skills-bar">
+                                <span class="skills-percentage" style="width: 75%"></span>
+                            </div>
+                        </div>
+                        <div class="skills-data">
+                            <div class="skills-titles">
+                                <h4 class="skills-name"><i class="fa-solid fa-chart-line skill-mini-icon"></i> Data Analysis (Pandas, NumPy)</h4>
+                                <span class="skills-number">80%</span>
+                            </div>
+                            <div class="skills-bar">
+                                <span class="skills-percentage" style="width: 80%"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Group 5: Databases & Tools -->
+                <div class="skills-content">
+                    <h3 class="skills-header">
+                        <i class="fa-solid fa-toolbox skills-icon"></i>
+                        <span>Databases & Developer Tools</span>
+                    </h3>
+                    
+                    <div class="skills-badge-list flex">
+                        <div class="skill-badge"><i class="fa-solid fa-server badge-icon"></i> MySQL</div>
+                        <div class="skill-badge"><i class="fa-solid fa-leaf badge-icon"></i> MongoDB</div>
+                        <div class="skill-badge"><i class="fa-brands fa-git-alt badge-icon"></i> Git</div>
+                        <div class="skill-badge"><i class="fa-brands fa-github badge-icon"></i> GitHub</div>
+                        <div class="skill-badge"><i class="fa-brands fa-docker badge-icon"></i> Docker</div>
+                        <div class="skill-badge"><i class="fa-solid fa-terminal badge-icon"></i> VS Code</div>
+                        <div class="skill-badge"><i class="fa-solid fa-envelope-open-text badge-icon"></i> Postman</div>
+                        <div class="skill-badge"><i class="fa-solid fa-cubes badge-icon"></i> Maven</div>
+                        <div class="skill-badge"><i class="fa-solid fa-server badge-icon"></i> Apache Tomcat</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Projects Section -->
+        <section class="projects section" id="projects">
+            <h2 class="section-title">Key Projects</h2>
+            <span class="section-subtitle">My Recent Implementations</span>
+            <div class="projects-container container">
+                <!-- Project Filters -->
+                <div class="project-filters">
+                    <button class="filter-btn active" data-filter="all">All Projects</button>
+                    <button class="filter-btn" data-filter="full-stack">Full-Stack</button>
+                    <button class="filter-btn" data-filter="ai-ml">AI & ML</button>
+                    <button class="filter-btn" data-filter="systems">Systems & Coding</button>
+                </div>
+                <!-- Project Grid -->
+                <div class="project-grid grid">
+                    
+                    <!-- Project 1: AI Workflow Commerce System -->
+                    <article class="project-card" data-category="full-stack">
+                        <div class="project-img-wrapper">
+                            <div class="project-mockup ai-workflow-mock">
+                                <div class="node fill-node">Client React</div>
+                                <div class="arrow">&#8594;</div>
+                                <div class="node fill-node-db">Spring Boot API</div>
+                                <div class="arrow">&#8594;</div>
+                                <div class="node fill-node-db">MySQL DB</div>
+                                <div class="workflow-overlay">
+                                    <span>AI Agent Orchestrator</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-tags">
+                                <span class="tag">Spring Boot</span>
+                                <span class="tag">React</span>
+                                <span class="tag">MySQL</span>
+                            </div>
+                            <h3 class="project-card-title">AI Workflow Commerce System</h3>
+                            <p class="project-description">
+                                A full-stack workflow automation and commerce platform featuring automated task triggers, real-time status monitoring, role-based workflows, and database transaction consistency.
+                            </p>
+                            <ul class="project-bullets">
+                                <li>Designed REST APIs for state management, tracking task hand-offs.</li>
+                                <li>Implemented responsive dashboard for workflow visualization.</li>
+                                <li>Created secure login mechanism using Spring Security.</li>
+                            </ul>
+                            <div class="project-actions">
+                                <a href="https://github.com/yashlone04" target="_blank" class="project-link"><i class="fa-brands fa-github"></i> Code</a>
+                                <a href="javascript:void(0)" class="project-link demo-link"><i class="fa-solid fa-circle-play"></i> Live Demo</a>
+                            </div>
+                        </div>
+                    </article>
+                    <!-- Project 2: E-Commerce Web Application -->
+                    <article class="project-card" data-category="full-stack">
+                        <div class="project-img-wrapper">
+                            <div class="project-mockup ecom-mock">
+                                <div class="card-ui">
+                                    <div class="circle"></div>
+                                    <div class="line"></div>
+                                    <div class="line short"></div>
+                                </div>
+                                <div class="card-ui">
+                                    <div class="circle"></div>
+                                    <div class="line"></div>
+                                    <div class="line short"></div>
+                                </div>
+                                <div class="cart-indicator"><i class="fa-solid fa-cart-shopping"></i> $124.99</div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-tags">
+                                <span class="tag">Java</span>
+                                <span class="tag">Spring Boot</span>
+                                <span class="tag">React</span>
+                                <span class="tag">MySQL</span>
+                            </div>
+                            <h3 class="project-card-title">E-Commerce Web Application</h3>
+                            <p class="project-description">
+                                End-to-end full-stack shopping application including complete item catalog, cart handling, checkout processing, and dedicated administrator dashboards.
+                            </p>
+                            <ul class="project-bullets">
+                                <li>Built user session management and authentication using Spring Security.</li>
+                                <li>Designed catalog search filters and real-time price calculations.</li>
+                                <li>Created comprehensive CRUD operations for order management.</li>
+                            </ul>
+                            <div class="project-actions">
+                                <a href="https://github.com/yashlone04" target="_blank" class="project-link"><i class="fa-brands fa-github"></i> Code</a>
+                                <a href="javascript:void(0)" class="project-link demo-link"><i class="fa-solid fa-circle-play"></i> Live Demo</a>
+                            </div>
+                        </div>
+                    </article>
+                    <!-- Project 3: Car Rental Management System -->
+                    <article class="project-card" data-category="full-stack">
+                        <div class="project-img-wrapper">
+                            <div class="project-mockup car-mock">
+                                <i class="fa-solid fa-car car-icon"></i>
+                                <div class="booking-pane">
+                                    <span>Date Picker</span>
+                                    <span class="booking-status">Available</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-tags">
+                                <span class="tag">Spring Boot</span>
+                                <span class="tag">React</span>
+                                <span class="tag">MySQL</span>
+                            </div>
+                            <h3 class="project-card-title">Car Rental Management System</h3>
+                            <p class="project-description">
+                                A responsive booking system with role-based dashboards for customers and operators to handle reservation bookings, calculate durations, and manage vehicle fleet records.
+                            </p>
+                            <ul class="project-bullets">
+                                <li>Calculated dynamic booking fees based on reservation period.</li>
+                                <li>Configured RBAC flow for separate customer and admin operations.</li>
+                                <li>Developed approval workflow engine for reservation confirmations.</li>
+                            </ul>
+                            <div class="project-actions">
+                                <a href="https://github.com/yashlone04" target="_blank" class="project-link"><i class="fa-brands fa-github"></i> Code</a>
+                                <a href="javascript:void(0)" class="project-link demo-link"><i class="fa-solid fa-circle-play"></i> Live Demo</a>
+                            </div>
+                        </div>
+                    </article>
+                    <!-- Project 4: AI Chatbot Application -->
+                    <article class="project-card" data-category="ai-ml">
+                        <div class="project-img-wrapper">
+                            <div class="project-mockup chatbot-mock">
+                                <div class="chat-bubble left">Hello! How can I assist you?</div>
+                                <div class="chat-bubble right">Analyze my data.</div>
+                                <div class="chat-bubble left thinking">Thinking...</div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-tags">
+                                <span class="tag">Python</span>
+                                <span class="tag">LLM APIs</span>
+                                <span class="tag">LangChain</span>
+                            </div>
+                            <h3 class="project-card-title">AI Chatbot Application</h3>
+                            <p class="project-description">
+                                Generative AI-powered interactive virtual assistant capable of context retrieval, dynamic replies, and parsing multi-turn inputs.
+                            </p>
+                            <ul class="project-bullets">
+                                <li>Integrated LLM APIs for language parsing and conversational tasks.</li>
+                                <li>Leveraged session states to preserve discussion history.</li>
+                                <li>Implemented quick prompt shortcuts and response formatting.</li>
+                            </ul>
+                            <div class="project-actions">
+                                <a href="https://github.com/yashlone04" target="_blank" class="project-link"><i class="fa-brands fa-github"></i> Code</a>
+                                <a href="javascript:void(0)" class="project-link demo-link"><i class="fa-solid fa-circle-play"></i> Live Demo</a>
+                            </div>
+                        </div>
+                    </article>
+                    <!-- Project 5: Gym Management Web Application -->
+                    <article class="project-card" data-category="full-stack">
+                        <div class="project-img-wrapper">
+                            <div class="project-mockup gym-mock">
+                                <i class="fa-solid fa-dumbbell gym-icon"></i>
+                                <div class="plan-card">
+                                    <span>Premium Plan</span>
+                                    <span>Active until 2027</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-tags">
+                                <span class="tag">Java</span>
+                                <span class="tag">Spring Boot</span>
+                                <span class="tag">HTML/CSS</span>
+                                <span class="tag">MySQL</span>
+                            </div>
+                            <h3 class="project-card-title">Gym Management Web Application</h3>
+                            <p class="project-description">
+                                A membership registration, attendance tracking, and billing record tracking system using MVC principles for administrative control.
+                            </p>
+                            <ul class="project-bullets">
+                                <li>Programmed secure plan renewal and automated date calculation logic.</li>
+                                <li>Engineered robust input validators on member enrollment forms.</li>
+                                <li>Generated clean summary statistics report tables on the admin dashboard.</li>
+                            </ul>
+                            <div class="project-actions">
+                                <a href="https://github.com/yashlone04" target="_blank" class="project-link"><i class="fa-brands fa-github"></i> Code</a>
+                                <a href="javascript:void(0)" class="project-link demo-link"><i class="fa-solid fa-circle-play"></i> Live Demo</a>
+                            </div>
+                        </div>
+                    </article>
+                    <!-- Project 6: Compiler Design Projects -->
+                    <article class="project-card" data-category="systems">
+                        <div class="project-img-wrapper">
+                            <div class="project-mockup compiler-mock">
+                                <div class="code-line"><span>if (x &gt; 5) {</span></div>
+                                <div class="token-list">
+                                    <span class="tok">IF_KEYWORD</span>
+                                    <span class="tok">LPAREN</span>
+                                    <span class="tok">IDENTIFIER</span>
+                                    <span class="tok">GT</span>
+                                    <span class="tok">NUMBER</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-tags">
+                                <span class="tag">Java</span>
+                                <span class="tag">Compiler Design</span>
+                                <span class="tag">Parsers</span>
+                            </div>
+                            <h3 class="project-card-title">Compiler Design Implementations</h3>
+                            <p class="project-description">
+                                Custom built parser and lexical analyzer packages highlighting grammar evaluation, compiler lifecycle pipeline stages, and tokenization.
+                            </p>
+                            <ul class="project-bullets">
+                                <li>Programmed scanner routines to partition source streams into tokens.</li>
+                                <li>Wrote recursive descent parser models mapping code to abstract syntax trees.</li>
+                                <li>Handled compilation grammar structures and semantic check algorithms.</li>
+                            </ul>
+                            <div class="project-actions">
+                                <a href="https://github.com/yashlone04" target="_blank" class="project-link"><i class="fa-brands fa-github"></i> Code</a>
+                                <a href="javascript:void(0)" class="project-link demo-link"><i class="fa-solid fa-circle-play"></i> Live Demo</a>
+                            </div>
+                        </div>
+                    </article>
+                    
+                </div>
+            </div>
+        </section>
+        <!-- Experience & Training Section -->
+        <section class="experience section" id="experience">
+            <h2 class="section-title">Experience & Training</h2>
+            <span class="section-subtitle">My Professional Pathway</span>
+            <div class="experience-container container grid">
+                <div class="timeline">
+                    
+                    <!-- Internship -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">Dec 2025 - Present</div>
+                        <div class="timeline-content">
+                            <h3 class="timeline-title">Full Stack Developer Intern</h3>
+                            <h4 class="timeline-subtitle">Software Solutions Corp</h4>
+                            <p class="timeline-desc">
+                                Collaborating with cross-functional development groups to build web application components. Debugging and integrating Spring Boot APIs with interactive React modules, increasing load optimization metrics. Participating in code review boards and sprint standup meetings.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Training -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">Jun 2024 - Dec 2024</div>
+                        <div class="timeline-content">
+                            <h3 class="timeline-title">Java Full Stack Development Training</h3>
+                            <h4 class="timeline-subtitle">IT Vedant Institute / CODETECH</h4>
+                            <p class="timeline-desc">
+                                Completed intensive courses focusing on core OOPs paradigms, database schema design, and Spring Framework ecosystem modules. Successfully implemented three portfolio projects including database migrations, CRUD query structures, and server routing.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Freelance -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">2023 - Present</div>
+                        <div class="timeline-content">
+                            <h3 class="timeline-title">Freelance Software & Web Development</h3>
+                            <h4 class="timeline-subtitle">Independent Projects</h4>
+                            <p class="timeline-desc">
+                                Consulting small scale local clients on website deployments. Integrating Google Forms, email handling packages, and structuring custom database templates. Delivering responsive business showcase pages.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Education Section -->
+        <section class="education section" id="education">
+            <h2 class="section-title">Education</h2>
+            <span class="section-subtitle">Academic Milestones</span>
+            <div class="education-container container grid">
+                <div class="timeline">
+                    
+                    <!-- B.Tech -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">2022 - 2026</div>
+                        <div class="timeline-content">
+                            <h3 class="timeline-title">B.Tech in Computer Science & Engineering</h3>
+                            <h4 class="timeline-subtitle">Sandip University, Nashik</h4>
+                            <p class="timeline-desc">
+                                Specializing in Software Architectures, Artificial Intelligence, Machine Learning, Database Management Systems, and Compiler Theory.
+                            </p>
+                            <span class="grade-badge">CGPA: 7.50 / 10.0 (Final Year Current: 7.70+)</span>
+                        </div>
+                    </div>
+                    <!-- HSC -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">2022</div>
+                        <div class="timeline-content">
+                            <h3 class="timeline-title">Higher Secondary Certificate (HSC)</h3>
+                            <h4 class="timeline-subtitle">Maharashtra State Board</h4>
+                            <p class="timeline-desc">
+                                Focus on Physics, Chemistry, Mathematics, and Computer Science studies.
+                            </p>
+                            <span class="grade-badge">Percentage: 66.60%</span>
+                        </div>
+                    </div>
+                    <!-- SSC -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">2020</div>
+                        <div class="timeline-content">
+                            <h3 class="timeline-title">Secondary School Certificate (SSC)</h3>
+                            <h4 class="timeline-subtitle">Maharashtra State Board</h4>
+                            <p class="timeline-desc">
+                                Fundamental secondary core subjects focusing on science, logic, and mathematics.
+                            </p>
+                            <span class="grade-badge">Percentage: 88.60%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Certifications Section -->
+        <section class="certifications section" id="certifications">
+            <h2 class="section-title">Certifications</h2>
+            <span class="section-subtitle">My Credentials</span>
+            <div class="certifications-container container grid">
+                
+                <div class="cert-card">
+                    <div class="cert-icon-box"><i class="fa-brands fa-java cert-icon"></i></div>
+                    <h3>Java Full Stack Web Development</h3>
+                    <p class="cert-issuer">IT Vedant Institute</p>
+                    <p class="cert-text">In-depth training on MVC design patterns, REST API construction, and Spring Framework integration.</p>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-icon-box"><i class="fa-solid fa-bug cert-icon"></i></div>
+                    <h3>Java Testing & Quality Assurance</h3>
+                    <p class="cert-issuer">IT Vedant Institute</p>
+                    <p class="cert-text">Focused on writing JUnit unit tests, automation pipelines, and validating endpoints.</p>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-icon-box"><i class="fa-solid fa-code cert-icon"></i></div>
+                    <h3>Full Stack Web Development</h3>
+                    <p class="cert-issuer">CODETECH Solutions</p>
+                    <p class="cert-text">End-to-end JavaScript-based structures, DOM mechanics, React elements, and backend connections.</p>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-icon-box"><i class="fa-solid fa-brain cert-icon"></i></div>
+                    <h3>Machine Learning Foundations</h3>
+                    <p class="cert-issuer">Online Credentials</p>
+                    <p class="cert-text">Regression models, SVM classifications, neural network layers, and model fine-tuning.</p>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-icon-box"><i class="fa-solid fa-robot cert-icon"></i></div>
+                    <h3>Generative AI & LLM Engineering</h3>
+                    <p class="cert-issuer">Self-paced Professional</p>
+                    <p class="cert-text">Prompt engineering setups, API routing parameters, and context retrieval workflows.</p>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-icon-box"><i class="fa-solid fa-cloud cert-icon"></i></div>
+                    <h3>Cloud Computing Fundamentals</h3>
+                    <p class="cert-issuer">Global Platforms</p>
+                    <p class="cert-text">Understanding virtual machines, container orchestration, and serverless compute structures.</p>
+                </div>
+            </div>
+        </section>
+        <!-- Achievements Section -->
+        <section class="achievements section">
+            <h2 class="section-title">Achievements</h2>
+            <span class="section-subtitle">Milestones & Recognitions</span>
+            <div class="achievements-container container grid">
+                <div class="achievement-item">
+                    <i class="fa-solid fa-trophy ach-icon"></i>
+                    <div>
+                        <h3>Technical Project Development Excellence</h3>
+                        <p>Developed three production-grade web applications utilizing full-stack architecture independently as part of professional training coursework.</p>
+                    </div>
+                </div>
+                <div class="achievement-item">
+                    <i class="fa-solid fa-award ach-icon"></i>
+                    <div>
+                        <h3>Academic Merit Ranking</h3>
+                        <p>Maintained a competitive 7.5+ cumulative grade point average (CGPA) throughout the computer science coursework at Sandip University.</p>
+                    </div>
+                </div>
+                <div class="achievement-item">
+                    <i class="fa-solid fa-lightbulb ach-icon"></i>
+                    <div>
+                        <h3>Hackathon Finalist</h3>
+                        <p>Ideated and implemented a real-time tracking dashboard Prototype for local logistics management challenge during university hackathon sprint.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- GitHub Statistics Section -->
+        <section class="github section" id="github">
+            <h2 class="section-title">GitHub Contribution Statistics</h2>
+            <span class="section-subtitle">Real-time Activity & Repositories</span>
+            <div class="github-container container grid">
+                <div class="github-stats-wrapper">
+                    <div class="github-card">
+                        <h3>Overall Github Profile Stats</h3>
+                        <div class="github-img-loader" id="github-stats-box">
+                            <img src="https://github-readme-stats.vercel.app/api?username=yashlone04&show_icons=true&theme=dark&hide_border=true&bg_color=111827&title_color=6366f1&icon_color=a855f7&text_color=9ca3af" alt="Yash Lone's GitHub Stats" class="github-widget" id="gh-stats-img">
+                        </div>
+                    </div>
+                    
+                    <div class="github-card">
+                        <h3>Language Preferences</h3>
+                        <div class="github-img-loader" id="github-langs-box">
+                            <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=yashlone04&layout=compact&theme=dark&hide_border=true&bg_color=111827&title_color=6366f1&text_color=9ca3af" alt="Yash Lone's Top Languages" class="github-widget" id="gh-langs-img">
+                        </div>
+                    </div>
+                    <div class="github-card full-width">
+                        <h3>Github Activity Streak</h3>
+                        <div class="github-img-loader" id="github-streak-box">
+                            <img src="https://github-readme-streak-stats.herokuapp.com/?user=yashlone04&theme=dark&hide_border=true&background=111827&ring=6366f1&fire=a855f7&currStreakNum=9ca3af&sideLabels=9ca3af" alt="Yash Lone's Github Streak" class="github-widget" id="gh-streak-img">
+                        </div>
+                    </div>
+                </div>
+                <div class="github-callout">
+                    <p><i class="fa-solid fa-info-circle"></i> Repositories are fetched dynamically. Visit my primary profile at <a href="https://github.com/yashlone04" target="_blank" class="accent-link">github.com/yashlone04</a> to view commit histories, pull requests, and other open-source collaborations.</p>
+                </div>
+            </div>
+        </section>
+        <!-- Contact Section -->
+        <section class="contact section" id="contact">
+            <h2 class="section-title">Contact Me</h2>
+            <span class="section-subtitle">Let's Build Something Together</span>
+            <div class="contact-container container grid">
+                <div class="contact-info-panel grid">
+                    <div class="contact-card">
+                        <i class="fa-solid fa-phone contact-card-icon"></i>
+                        <h3>Phone</h3>
+                        <p class="contact-card-value">+91-7020056690</p>
+                        <span class="contact-card-sub">Available: 9 AM - 7 PM</span>
+                    </div>
+                    <div class="contact-card">
+                        <i class="fa-solid fa-envelope contact-card-icon"></i>
+                        <h3>Email</h3>
+                        <p class="contact-card-value">yashlone04@email.com</p>
+                        <a href="mailto:yashlone04@email.com" class="contact-card-action">Send Email <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                    <div class="contact-card">
+                        <i class="fa-brands fa-linkedin contact-card-icon"></i>
+                        <h3>LinkedIn</h3>
+                        <p class="contact-card-value">yash-lone-a08193385</p>
+                        <a href="https://linkedin.com/in/yash-lone-a08193385" target="_blank" class="contact-card-action">Connect <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                    <div class="contact-card">
+                        <i class="fa-brands fa-github contact-card-icon"></i>
+                        <h3>GitHub</h3>
+                        <p class="contact-card-value">yashlone04</p>
+                        <a href="https://github.com/yashlone04" target="_blank" class="contact-card-action">Follow <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <!-- Contact form -->
+                <div class="contact-form-wrapper">
+                    <form action="javascript:void(0)" class="contact-form" id="contact-form">
+                        <div class="form-inputs grid">
+                            <div class="form-group">
+                                <label for="name" class="form-label">Full Name</label>
+                                <input type="text" id="name" name="name" class="form-input" placeholder="John Doe" required>
+                                <span class="error-msg" id="name-error">Please enter your name</span>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email" class="form-label">Email Address</label>
+                                <input type="email" id="email" name="email" class="form-input" placeholder="john@example.com" required>
+                                <span class="error-msg" id="email-error">Please enter a valid email address</span>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject" class="form-label">Subject</label>
+                            <input type="text" id="subject" name="subject" class="form-input" placeholder="Project Inquiry" required>
+                            <span class="error-msg" id="subject-error">Please enter a subject</span>
+                        </div>
+                        <div class="form-group">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea id="message" name="message" cols="30" rows="6" class="form-input form-textarea" placeholder="Hello! I would love to talk about a full stack developer opportunity..." required></textarea>
+                            <span class="error-msg" id="message-error">Please enter a message</span>
+                        </div>
+                        <button type="submit" class="btn btn-primary form-submit-btn">
+                            Send Message <i class="fa-solid fa-paper-plane"></i>
+                        </button>
+                        
+                        <div class="form-success-box" id="form-success-box">
+                            <i class="fa-solid fa-circle-check"></i>
+                            <div>
+                                <h4>Message Sent Successfully!</h4>
+                                <p>Thank you, Yash will get back to you shortly.</p>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container container grid">
+            <div class="footer-brand">
+                <a href="#home" class="logo footer-logo">
+                    <span class="logo-code">&lt;</span>Yash<span class="logo-accent">Lone</span><span class="logo-code"> /&gt;</span>
+                </a>
+                <p class="footer-text">Building robust web solutions and engineering smart algorithms.</p>
+            </div>
+            <ul class="footer-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="footer-socials">
+                <a href="https://linkedin.com/in/yash-lone-a08193385" target="_blank" class="footer-social" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://github.com/yashlone04" target="_blank" class="footer-social" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                <a href="mailto:yashlone04@email.com" class="footer-social" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+        </div>
+        
+        <div class="footer-copy">
+            <p>&copy; 2026 Yash Lone. All Rights Reserved. Crafted with care.</p>
+        </div>
+    </footer>
+    <!-- Back to Top -->
+    <a href="#home" class="scrollup" id="scroll-up" aria-label="Scroll to top">
+        <i class="fa-solid fa-arrow-up scrollup-icon"></i>
+    </a>
+    <!-- Modal for Resume Preview -->
+    <div class="modal" id="resume-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Yash Lone - Resume</h3>
+                <span class="modal-close" id="modal-close-btn">&times;</span>
+            </div>
+            <div class="modal-body">
+                <p>The PDF Resume is ready for generation. You can compile the website folder and download it using the button below:</p>
+                <div class="resume-preview-box">
+                    <div class="resume-header-preview">
+                        <h4>YASH LONE</h4>
+                        <p>Full Stack Developer — Java</p>
+                        <p class="small">yashlone04@email.com | +91-7020056690</p>
+                    </div>
+                    <div class="resume-section-preview">
+                        <h5>Technical Skills Summary</h5>
+                        <p>Core Java, Spring Boot, React, MySQL, Python, Machine Learning, Generative AI</p>
+                    </div>
+                    <div class="resume-section-preview">
+                        <h5>Key Projects Summary</h5>
+                        <ul>
+                            <li>AI Workflow Commerce System</li>
+                            <li>E-Commerce Web Application</li>
+                            <li>Car Rental Management System</li>
+                            <li>AI Chatbot Application</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-secondary" id="modal-close-action">Close</button>
+                <a href="javascript:void(0)" class="btn btn-primary" id="modal-download-action">Download PDF Resume <i class="fa-solid fa-file-pdf"></i></a>
+            </div>
+        </div>
+    </div>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>

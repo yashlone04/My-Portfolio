@@ -1,0 +1,100 @@
+YASH LONE
+FULL STACK DEVELOPER — JAVA
+Phone: +91-7020056690 | Email: yashlone04@email.com | Location: Mumbai, Maharashtra
+LinkedIn: linkedin.com/in/yash-lone-a08193385 | GitHub: github.com/yashlone04
+================================================================================
+PROFESSIONAL SUMMARY
+================================================================================
+Motivated B.Tech Computer Science graduate (2026) seeking an entry-level Full
+Stack Java Developer role. Hands-on experience building three full-stack web
+applications using Java, Spring Boot, React, and MySQL — covering REST API
+development, authentication, database design, and admin dashboards. Strong OOP
+foundation with practical exposure to MVC architecture, RESTful API design, and
+end-to-end feature delivery. Comfortable across the stack, from schema design
+to UI integration. Open to BFSI, e-commerce, or any assigned domain —
+immediately available and flexible to travel across Western, Central, and Navi
+Mumbai.
+================================================================================
+TECHNICAL SKILLS
+================================================================================
+- Backend: Core Java, OOP Concepts, Spring Boot, Hibernate, JPA, RESTful APIs,
+  MVC Architecture
+- Frontend: HTML5, CSS3, JavaScript, React, Bootstrap, Tailwind CSS
+- Database: MySQL — Schema Design, Queries, CRUD Operations, Joins, Normalization
+- Tools & Platforms: Postman, Git, GitHub, Maven, Apache Tomcat, Docker, VS Code
+- Concepts & Practices: REST API Design, Authentication & Session Management,
+  CRUD Operations, Role-Based Access Control, Payment Integration, Agile Basics
+================================================================================
+EDUCATION
+================================================================================
+B.Tech – Computer Science Engineering                               2022 – 2026
+Sandip University, Nashik                                 CGPA: 7.5 / 10 (Final)
+HSC (Class XII) – Maharashtra State Board                                  2022
+Percentage: 66.60%
+SSC (Class X) – Maharashtra State Board                                    2020
+Percentage: 88.60%
+================================================================================
+KEY PROJECTS
+================================================================================
+1. AI Workflow Commerce System
+   Technologies: React, Spring Boot, MySQL, Java
+   - Full-stack workflow automation platform featuring automated task triggers,
+     real-time status monitoring, role-based workflows, and transaction checks.
+   - Designed REST APIs for state management, tracking task hand-offs.
+   - Implemented responsive dashboard for workflow visualization.
+   - Created secure login mechanism using Spring Security.
+2. E-Commerce Web Application
+   Technologies: Java, Spring Boot, React, MySQL
+   - Full-stack platform featuring user authentication, product management,
+     shopping cart, checkout, order tracking, and an admin panel.
+   - Built user authentication and session management using Spring Security,
+     including login, registration, and role-based access.
+   - Developed product catalog with search, filtering, and shopping cart logic,
+     including real-time price calculation.
+   - Implemented end-to-end checkout flow and order tracking with order-status
+     state management.
+   - Designed REST APIs for product, cart, and order operations; built an admin
+     panel with full CRUD functionality, tested via Postman.
+3. Car Rental Web Application
+   Technologies: Java, Spring Boot, React, MySQL
+   - Booking platform with role-based access for customers and admins, car search,
+     rental duration calculation, and reservation management.
+   - Implemented role-based access control (RBAC) for customer and admin login
+     flows using Spring Security.
+   - Built car availability search with filters, and booking logic for date/
+     duration selection and rental cost calculation.
+   - Designed pricing and duration calculation logic, handling edge cases for
+     date validation.
+   - Developed admin reservation management module — creation, update, approval
+     workflows, and data persistence via MySQL.
+4. Gym Management Web Application
+   Technologies: Java, Spring Boot, HTML, CSS, JavaScript, MySQL
+   - Membership and billing platform with payment integration, MVC architecture,
+     member progress tracking, and an admin dashboard.
+   - Built member registration module with form validation, required-field checks,
+     and data type handling.
+   - Implemented membership plan renewal and expiry logic with automated date
+     calculations and plan transitions.
+   - Integrated payment transaction processing and built admin dashboard for
+     member and billing record management.
+5. Compiler Design Implementations
+   Technologies: Java, Compiler Design concepts
+   - Lexical analyzer and parser implementation highlighting tokenization, grammar
+     evaluations, syntax tree constructions.
+   - Programmed scanner routines to partition source streams into tokens.
+   - Wrote recursive descent parser models mapping code to abstract syntax trees.
+================================================================================
+CERTIFICATIONS
+================================================================================
+- Java Full Stack Web Development — IT Vedant Institute
+- Java Testing — IT Vedant Institute
+- Java Full Stack Web Development — CODETECH Solutions
+- Machine Learning Foundations — Online Credentials
+- Generative AI & LLM Engineering — Self-paced Professional
+================================================================================
+ADDITIONAL INFORMATION
+================================================================================
+- Languages: English (Professional), Hindi, Marathi
+- Availability: Immediate Joiner
+- Domain Preferences: Open to BFSI, E-commerce, or Any Assigned Domain;
+  Flexible to Travel
